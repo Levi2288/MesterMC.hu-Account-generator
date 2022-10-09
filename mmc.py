@@ -86,7 +86,7 @@ def job_finish():
         os.mkdir("accounts")
     with open(dump_file, 'w') as f:
         while counter < success:
-            f.write(success_accs[counter])
+            f.write(success_accs[counter] + "\n")
             counter += 1
     print(f"[{Fore.BLUE}?{Fore.RESET}] Generated {success} account(s)")
     print(f"[{Fore.BLUE}?{Fore.RESET}] All accounts has been dumped to {dump_file}")
